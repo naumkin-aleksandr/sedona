@@ -1,0 +1,162 @@
+.reservation {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  &__title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__search {
+    position: relative;
+  }
+
+  &__button {
+    width: 568px;
+    height: 86px;
+    border: none;
+    background: #766357;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      background: #604e43;
+      transition: .2s;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background: #503e33;
+      transition: .2s;
+    }
+  }
+}
+
+.form {
+  padding: 55px;
+  background: #fff;
+  position: absolute;
+  top: 86px;
+  left: 0;
+  z-index: 2;
+
+  &__box {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__label {
+    cursor: pointer;
+  }
+
+  &__input {
+    height: 38px;
+    background-color: #f2f2f2;
+
+    &:hover {
+      background-color: #ebebeb;
+      transition: .2s;
+    }
+
+    &:focus {
+      background: none;
+      border: 2px solid #e5e5e5;
+      transition: .2s;
+    }
+
+    &_data {
+      width: 346px;
+      padding-left: 13px;
+    }
+
+    &_quantity {
+      width: 114px;
+      text-align: center;
+    }
+  }
+
+  &__input-wrapper {
+    position: relative;
+  }
+
+  &__icon-calendar {
+    width: 25px;
+    height: 25px;
+    fill: #a9a9a9;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 13px;
+    cursor: pointer;
+
+    &:hover {
+      fill: #000;
+      transition: .2s;
+    }
+
+    &:active {
+      fill: #81b3d2;
+    }
+  }
+
+  &__btn-minus,
+  &__btn-plus {
+    background: none;
+    font-weight: 700;
+    font-size: 25px;
+    border: none;
+    color: #a9a9a9;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    &:hover {
+      color: #000;
+      transition: .2s;
+    }
+
+    &:active {
+      color: #81b3d2;
+    }
+  }
+
+  &__btn-minus {
+    left: 14px;
+  }
+
+  &__btn-plus {
+    right: 13px;
+  }
+
+  &__button {
+    display: block;
+    width: 458px;
+    height: 58px;
+    border: none;
+    background: #81b3d2;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background: #669ec0;
+      transition: .2s;
+    }
+
+    &:active {
+      background: #5496bd;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}

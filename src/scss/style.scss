@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+
+// parts
+@import "parts/common-styles.scss";
+@import "parts/header.scss";
+@import "parts/banner.scss";
+@import "parts/content-main.scss";
+@import "parts/advantage.scss";
+@import "parts/reservation.scss";
+@import "parts/map.scss";
+@import "parts/footer.scss";
+@import "parts/content-hotel.scss";
+@import "parts/search.scss";
+@import "parts/found.scss";
+@import "parts/sorting.scss";
+
+@import "parts/br.scss";

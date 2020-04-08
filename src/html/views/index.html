@@ -1,0 +1,167 @@
+<% var data = {
+  title: "Sedona",
+  author: "Harrix"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<main class="content-main">
+
+  <div class="banner">
+    <div class="banner__box"></div>
+  </div>
+
+  <h1 class="content-main__title text_lg">Седона - небольшой городок в аризоне,<br>
+    заслуживающий большего!
+  </h1>
+
+  <div class="advantage">
+    <h2 class="subtitle text_s"> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
+
+    <div class="advantage__block">
+
+      <div class="advantage__box">
+        <div class="advantage__description advantage__description_blue">
+          <h3 class="advantage__title text_lg">Настоящий<br> городок</h3>
+          <span class="advantage__number text_s">- №1 -</span>
+          <p class="advantage__text text_s">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <div class="advantage__img advantage__img_town">
+        </div>
+      </div>
+      <!--/advantage__box-->
+      <div class="advantage-subsection">
+
+        <div class="advantage-subsection__description">
+          <img class="advantage-subsection__icon" src="img/icon-home.png" alt="">
+          <h3 class="advantage-subsection__title text_lg">Жилье</h3>
+          <p class="advantage-subsection__text text_s text_s">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
+        <div class="advantage-subsection__description">
+          <img class="advantage-subsection__icon" src="img/icon-food.png" alt="">
+          <h3 class="advantage-subsection__title text_lg">Еда</h3>
+          <p class="advantage-subsection__text text_s text_s">Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+          </p>
+        </div>
+        <div class="advantage-subsection__description">
+          <img class="advantage-subsection__icon" src="img/icon-souvenir.png" alt="">
+          <h3 class="advantage-subsection__title text_lg">Сувениры</h3>
+          <p class="advantage-subsection__text text_s text_s">Не только китайского, но и местного производства!</p>
+        </div>
+
+      </div>
+      <!--/advantage-subsection-->
+
+    </div>
+    <!--/advantage__block-->
+
+
+    <div class="advantage__box">
+      <div class="advantage__img advantage__img_canyon">
+      </div>
+
+      <div class="advantage__description advantage__description_blue">
+        <h3 class="advantage__title text_lg">Там есть<br> мост дьвола</h3>
+        <span class="advantage__number text_s">- №2 -</span>
+        <p class="advantage__text text_s">Да, по нему можно пройти! Если конечно вы осмелетесь </p>
+      </div>
+
+    </div>
+    <!--/advantage__box-->
+
+    <div class="advantage__box">
+
+      <div class="advantage__description advantage__description_gray">
+        <h3 class="advantage__title text_lg">Небольшая<br> площадь</h3>
+        <span class="advantage__number text_s">- №3 -</span>
+        <p class="advantage__text text_s">Все достопримеча&#173;тельности находятся очень близко </p>
+      </div>
+      <div class="advantage__description advantage__description_gray">
+        <h3 class="advantage__title text_lg">Красивая<br> дорога</h3>
+        <span class="advantage__number text_s">- №4 -</span>
+        <p class="advantage__text text_s">Ехать с Седону из Лас-Вегаса совсем не скучно</p>
+      </div>
+      <div class="advantage__description advantage__description_gray">
+        <h3 class="advantage__title text_lg">Мало<br> туристов</h3>
+        <span class="advantage__number text_s">- №5 -</span>
+        <p class="advantage__text text_s">Большинство едет в гранд каньон и толпится там </p>
+      </div>
+
+    </div>
+    <!--/advantage__box-->
+
+  </div>
+  <!--/advantage-->
+
+
+
+  <div class="reservation">
+
+    <h2 class="reservation__title text_xl">Заинтересовались?</h2>
+
+    <p class="reservation__text text_s">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
+      гостиниц в Седоне</p>
+
+    <div class="reservation__search">
+
+      <button class="reservation__button reservation__button_brown text_lg" id="open-form">Поиск гостиницы в
+        Седоне</button>
+
+      <form class="form none" id="form" action="#">
+
+        <div class="form__box">
+          <label class="form__label text_md" for="arrival-date">Дата заезда:</label>
+          <div class="form__input-wrapper">
+            <input class="form__input form__input_data text_md" id="arrival-date" type="text">
+            <svg class="form__icon-calendar">
+              <use xlink:href="#calendar"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="form__box">
+          <label class="form__label text_md" for="departure-date">Дата выезда:</label>
+          <div class="form__input-wrapper">
+            <input class="form__input form__input_data text_md" id="departure-date" type="text">
+            <svg class="form__icon-calendar">
+              <use xlink:href="#calendar"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="form__box">
+          <label class="form__label text_md" for="quantity-adults">Взрослые: </label>
+          <div class="form__input-wrapper">
+            <input class="form__input form__input_quantity text_md" id="quantity-adults" type="text"  pattern="[0-9]"  >
+            <button class="form__btn-minus" type="button">&minus;</button>
+            <button class="form__btn-plus" type="button">&plus;</button>
+          </div>
+
+          <label class="form__label text_md" for="quantity-children">Дети: </label>
+          <div class="form__input-wrapper">
+            <input class="form__input form__input_quantity text_md" id="quantity-children" type="text" pattern="[0-9]" title="Укажите количество детей" >
+            <button class="form__btn-minus" type="button">&minus;</button>
+            <button class="form__btn-plus" type="button">&plus;</button>
+          </div>
+        </div>
+
+        <button class="form__button text_lg">Найти</button>
+
+
+
+      </form>
+    </div>
+    <!--reservation__search -->
+  </div>
+  <!--/reservation-->
+
+  <div class="map__wrapper">
+    <iframe class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d431822.4977984316!2d-111.59694343943322!3d34.76429488295771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1585779149486!5m2!1sru!2sru"
+      allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  
+    </div>
+</main>
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

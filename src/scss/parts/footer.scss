@@ -1,0 +1,81 @@
+.footer {
+ z-index: 2;
+
+  &__wrapper {
+    width: 100%;
+    padding: 36px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  &__title {
+    margin-left: 60px;
+  }
+}
+
+.social {
+  display: flex;
+
+  &__link {
+    margin-right: 6px;
+
+    width: 46px;
+    height: 48px;
+
+    &_tw {
+      background: #81b3d2 url(../img/tw.png) no-repeat center;
+
+      &:active {
+        background: #5496bd url(../img/tw-opas.png) no-repeat center;
+      }
+    }
+
+    &_fb {
+      background: #81b3d2 url(../img/fb.png) no-repeat center;
+
+      &:active {
+        background: #5496bd url(../img/fb-opas.png) no-repeat center;
+      }
+    }
+
+    &_youtube {
+      background: #81b3d2 url(../img/youtube.png) no-repeat center;
+
+      &:active {
+        background: #5496bd url(../img/youtube-opas.png) no-repeat center;
+      }
+    }
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.copy {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+
+  &__link {
+    display: block;
+    width: 115px;
+    height: 41px;
+    margin-left: 5px;
+    background: url(../img/logo_copy1.png) no-repeat center;
+
+    &:hover {
+      background: url(../img/logo_copy2.png) no-repeat center;
+    }
+
+    &:active {
+      background: url(../img/logo_copy3.png) no-repeat center;
+    }
+  }
+}

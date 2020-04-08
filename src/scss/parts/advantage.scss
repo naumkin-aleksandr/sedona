@@ -1,0 +1,84 @@
+.subtitle {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.advantage {
+  &__box {
+    display: flex;
+  }
+
+  &__description {
+    width: 33.3333333333%;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+
+    &_blue {
+      background: #84a8bc;
+      color: #ffffff;
+      padding: 0 40px;
+    }
+
+    &_gray {
+      background: #ededed;
+      flex: 1 0 256px;
+      padding: 0 50px;
+    }
+  }
+
+  &__title {
+    margin-top: 45px;
+    margin-bottom: 20px;
+  }
+
+  &__number {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 36px;
+    line-height: 21px;
+  }
+
+  &__img {
+    width: 66.6666666667%;
+    height: auto;
+    background-size: cover;
+
+    &_town {
+      background: url(../img/town.jpg) no-repeat center;
+      background-size: cover;
+    }
+
+    &_canyon {
+      background: url(../img/canyon.jpg) no-repeat center;
+      background-size: cover;
+    }
+  }
+}
+
+.advantage-subsection {
+  display: flex;
+
+  &__description {
+    width: 33.3333333333%;
+    padding: 0 45px;
+    text-align: center;
+  }
+
+  &__icon {
+    margin-top: 60px;
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+
+    line-height: 21px;
+  }
+}

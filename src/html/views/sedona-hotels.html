@@ -1,0 +1,167 @@
+<% var data = {
+  title: "sedona-hotels",
+  author: "Harrix"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<main class="content-hotel">
+
+    <section class="search">
+        <form class="search__form" action="">
+
+            <div class="search__item search__item_left">
+                <h3 class="search__title">Инфраструктура:</h3>
+
+                <input class="search__input search__input_none" id="pool" type="checkbox" name="infrastructure" checked>
+                <label class="search__label text_s" for="pool">Бассейн </label>
+
+                <input class="search__input search__input_none" id="parding" type="checkbox" name="infrastructure">
+                <label class="search__label text_s" for="parding">Парковка </label>
+
+
+                <input class="search__input search__input_none" id="wi-fi" type="checkbox" name="infrastructure">
+                <label class="search__label text_s" for="wi-fi">wi-fi </label>
+
+
+            </div>
+
+            <div class="search__item">
+                <h3 class="search__title">Тип жилья:</h3>
+
+                <input class="search__input search__input_none" id="hotel" type="checkbox" name="housing" checked>
+                <label class="search__label text_s" for="hotel"> Гостиница </label>
+
+                <input class="search__input search__input_none" id="motel" type="checkbox" name="housing" checked>
+                <label class="search__label text_s" for="motel">Мотель </label>
+
+                <input class="search__input search__input_none" id="apartments" type="checkbox" name="housing" checked>
+                <label class="search__label text_s" for="apartments"> Апартаменты </label>
+
+            </div>
+
+            <div class="search__item search__item_right">
+                <h3 class="search__title">Стоимость в сутки (Р):</h3>
+
+                <div class="search__bl">
+                    <input class="search__input" type="text" placeholder="от 0">
+                    <input class="search__input" type="text" placeholder="до 3000">
+                </div>
+
+                <button class="search__button text_s">Показать</button>
+
+            </div>
+
+        </form> <!-- /search__form-->
+    </section> <!-- /search-->
+
+    <section class="found">
+
+        <div class="found__header">
+            <h2 class="found__title_header text_lg">Найдено: 3</h2>
+
+            <div class="sorting">
+                <p class="sorting__text text_xs">Сортировка:</p>
+                <button class="sorting__button text_xs  sorting__button_active">По цене </button>
+                <button class="sorting__button text_xs ">По типу</button>
+                <button class="sorting__button text_xs ">По рейтенгу</button>
+                <button class="sorting__button_triangle_down"></button>
+                <button class="sorting__button_triangle_up sorting__button_active"></button>
+            </div>
+        </div>
+        <!--/found__header -->
+
+        <div class="found__list">
+
+            <div class="found__item ">
+                <img class="found__img" src="img/hotel-amara135x90.jpg" alt="">
+
+                <div class="found__box">
+                    <h3 class="found__title text_lg">Amara resort & spa</h3>
+                    <p class="found__text text_s">Гостиница <span class="found-box__price">от 4000 Р.</span></p>
+                    <a class="found__link found__link_blue text_md" href="">Подробней</a>
+                    <a class="found__link found__link_brown text_md" href="">Забронировать</a>
+                </div>
+
+                <div class="rating found__rating">
+                    <p class="rating__text text_s"> Рейтинг:8,5</p>
+                    <div class="rating__icon">
+                        <svg class="rating__icon-star">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="rating__icon-star">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="rating__icon-star">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="rating__icon-star">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="rating__icon-star">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+           <!--/found__item-->
+
+            <div class="found__item">
+                <img class="found__img" src="img/hotel-desert135x90.jpg" alt="">
+
+                <div class="found__box">
+                    <h3 class="found__title text_lg">Desert quail inn</h3>
+                    <p class="found__text text_s">Мотель <span class="found-box__price">От 3000 Р.</span></p>
+                    <a class="found__link found__link_blue text_md" href="">Подробней</a>
+                    <a class="found__link found__link_brown text_md" href="">Забронировать</a>
+                </div>
+
+                <div class="rating found__rating">
+                    <p class="rating__text text_s"> Рейтинг:8,9</p>
+                    <div class="rating__icon">
+                        <svg class="rating__icon-star">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="rating__icon-star">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="rating__icon-star">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+          <!--/ found__item-->
+
+            <div class="found__item">
+                <img class="found__img" src="img/hotel-diablo135x90.jpg" alt="">
+
+                <div class="found__box">
+                    <h3 class="found__title text_lg">Villas at poco diablo</h3>
+                    <p class="found__text text_s">Апартаменты<span class="found-box__price"> от 2000 Р. </span></p>
+                    <a class="found__link found__link_blue text_md" href="">Подробней</a>
+                    <a class="found__link found__link_brown text_md" href="">Забронировать</a>
+                </div>
+
+                <div class="rating found__rating">
+                    <p class="rating__text text_s"> Рейтинг:9,2</p>
+                    <div class="rating__icon">
+                        <svg class="rating__icon-star">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="rating__icon-star">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+            <!--/ found__item -->
+        </div> <!-- /found__list -->
+
+    </section> <!-- /found-->
+</main> 
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

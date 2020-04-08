@@ -1,0 +1,51 @@
+  html {
+    height: 100%;
+  }
+  
+  .page {
+    width: 768px;
+    min-height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .none {
+    display: none;
+  }
+  
+  .text_xs {
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-size: 12px;
+    font-style: italic;
+  }
+  
+  .text_s {
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  
+  .text_md {
+    font-family: "PT Sans";
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  
+  .text_lg {
+    font-family: "PT Sans";
+    font-weight: 700;
+    font-size: 21px;
+    text-transform: uppercase;
+  }
+  
+  .text_xl {
+    font-family: "PT Sans";
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  
