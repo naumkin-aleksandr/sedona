@@ -1,2 +1,7 @@
-# sedona 
-html 
+# sedona
+
+## Project setup
+
+```
+npm install
+```
